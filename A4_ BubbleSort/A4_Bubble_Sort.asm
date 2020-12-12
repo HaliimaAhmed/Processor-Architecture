@@ -1,8 +1,6 @@
 ;A4_Bubble_Sort.asm
 
 ; Author:       Halima Ahmed
-; Course:       CST8216 Fall 2018
-; S/N:          040825884
 ; Date:         December 6th, 2018
 
 ; Purpose: The purpose of this lab is to implement a Bubble sort
