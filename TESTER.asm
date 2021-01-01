@@ -17,12 +17,12 @@ Start   lds     #STACK                    ; stack location
         jsr     Config_SWs_and_LEDs       ; Configure the Ports
 Back    ldaa    #PB0ON          	  ; Continually Flash LED
         staa    portb           	  ; PB0 ON
-        ldaa    #180            	  ; 180 ms delay
-        jsr     Delay_ms        	  ; call 180ms delay routine
+        ldaa    #90            	  	  ; 90 ms delay
+        jsr     Delay_ms        	  ; call 90ms delay routine
         ldaa    #PB0OFF        		  ; Continually Flash LED OFF
         staa    portb           	  ; PB7 OFF
-        ldaa    #180            	  ; 250 ms delay
-        jsr     Delay_ms        	  ; call 180ms delay routine
+        ldaa    #9 0            	  ; 250 ms delay
+        jsr     Delay_ms        	  ; call 90ms delay routine
         bra     Back            	  ; endless loop
 
 
