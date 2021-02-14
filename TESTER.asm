@@ -15,12 +15,12 @@ PB0OFF  equ     %00000000                 ; 1 turns on LED, 0 turns off LED
 Start   lds     #STACK                    ; stack location
         clrb
         jsr     Config_SWs_and_LEDs       ; Configure the Ports
-Back    ldaa    #PB0ON          	  ; Continually Flash LED
-        staa    portb           	  ; PB0 ON
+Back    ldaa    #PA0ON          	  ; Continually Flash LED
+        staa    portA           	  ; PA0 ON
         ldaa    #90            	  	  ; 90 ms delay
         jsr     Delay_ms        	  ; call 90ms delay routine
         ldaa    #PB0OFF        		  ; Continually Flash LED OFF
-        staa    portb           	  ; PB7 OFF
+        staa    portA           	  ; PA7 OFF
         ldaa    #9 0            	  ; 250 ms delay
         jsr     Delay_ms        	  ; call 90ms delay routine
         bra     Back            	  ; endless loop
